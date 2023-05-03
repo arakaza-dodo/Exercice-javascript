@@ -40,7 +40,18 @@ let id = {
      fullname(){return this.nom_du_Père+" et "+this.nom_du_Mère},
      false(){return this.nom+" et "+this.age},
 }
-
+//la difference entre for ...in et for ...of
+//for ..in :permet de parcourir les propriétés énumerable d'un objet  dans un ordre arbitraire: (prend un objet inclue le tableau)
+//for of  :permet de creer une boucle array  qui parcourt un objet itérable(prend itérable uniquement le tableau )
+ for (let card in id){
+    console.log(card);//nom,prenom,age,nom des parents
+ }
+  for (let card in id){
+    console.log(id[card]);//arakaza,dorcella,18,Oscar,Eugenie
+  }
+  for (let card in croissant){
+    console.log(croissant[card]);//le card permet de montre la longueur du tableau (1,2,3,4,5...)
+  }
 </script> 
 </body>
 </html>
