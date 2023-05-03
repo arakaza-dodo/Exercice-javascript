@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tp</title>
+</head>
+<body>
+    <script>
+  let croissant = [5,2,7,8,9,11,1,10];
+
+  croissant.sort((a,b)=>{
+    return a-b;
+}); 
+let max=Math.max(...croissant);//maximum
+let min=Math.min(...croissant);//minimum
+
+//pairs
+for (let i = 0; i <= croissant.length;i++) {
+    if(croissant[i]%2===0){
+   console.log(croissant[i])
+      
+    }
+};
+//impairs
+for (let i = 0; i <= croissant.length;i++) {
+    if(croissant[i]%2!==0){
+   console.log(croissant[i])
+      
+    }
+};
+//CNI
+let id = {
+     nom:"arakaza",
+     prenom:"dorcella",
+     age:18,
+     nom_du_Père:"Oscar",
+     nom_du_Mère:"Eugenie",
+     fullname(){return this.nom_du_Père+" et "+this.nom_du_Mère},
+     false(){return this.nom+" et "+this.age},
+}
+
+</script> 
+</body>
+</html>
+
